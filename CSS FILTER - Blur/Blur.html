@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css filter: Blur</title>
+    <style>
+        body {
+            margin: 0;
+            background: #1D152D;
+        }
+        div {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            img{
+                position: absolute;
+                width: 180px;
+                height: 180px;
+                transition: filter 2s ease;      
+            }
+            img:hover{
+                filter: blur(2px);
+            }
+            :first-child{
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.587);
+            }
+            :nth-child(2){
+                transition: opacity 1s ease;
+                opacity: 0;
+            }
+            :nth-child(2):hover{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img-1.jpg" alt="Imagem 1">
+        <img src="img-2.jpg" alt="Imagem 2" id="img">
+    </div>
+    <script>
+    </script>
+</body>
+</html>
