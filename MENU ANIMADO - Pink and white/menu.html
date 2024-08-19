@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu animado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: league spartan;
+            background: #0c0c0c;
+            color: white;
+            width: 100%;
+}
+        main{
+            display: flex;
+            flex-direction: row;
+            background: #D96E67;
+            .artista-profile.menu{
+                .menu-container{
+                    >button{
+                        margin-right: 5px;
+                        max-width: fit-content;
+                        cursor: pointer;
+                        font-family: "Barlow", sans-serif;
+                        font-size: 12px;
+                        font-weight: 700;
+                        letter-spacing: .4px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        border: none;
+                        border-radius: 3px;
+                        padding: 15px 15px;
+                        background: rgba(255, 255, 255, 0.89);
+                
+                    }
+                    >button[name="artista-profile menu button play"]{
+                        >img{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .artista-profile.infos{
+                align-self: flex-end;
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                bottom: 30px;
+                p{
+                    display: flex;
+                    flex-direction: row;
+                    background: #151515c9;
+                    width: fit-content;
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                    padding: 5px 14px 5px 20px;
+                    --border-radius: 20px;
+                    border-top-right-radius: var(--border-radius);
+                    border-bottom-right-radius: var(--border-radius);
+                    text-align: right;
+
+                }
+            }
+        }
+    </style>
+        
+
+    
+</head>
+<body>
+    <main>
+        <span class="lineTop">
+            <svg width="16" height="214" viewBox="0 0 16 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.00001 198C3.58173 198 6.44737e-06 201.582 6.25424e-06 206C6.06111e-06 210.418 3.58173 214 8.00001 214C12.4183 214 16 210.418 16 206C16 201.582 12.4183 198 8.00001 198ZM6.50002 -6.55671e-08L6.50001 206L9.50001 206L9.50002 6.55671e-08L6.50002 -6.55671e-08Z" fill="#151515"/>
+            </svg>
+        </span>
+        <span class="lineBottom">
+            <svg width="16" height="36" viewBox="0 0 4 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0L2 36" stroke="#151515" stroke-width="4"/>
+            </svg>
+        </span>
+        <div class="artista-profile menu">
+            <h1 class="h1">Yves</h1>
+            <h1 class="text-efect">Yves</h1>                
+            <span class="menu-container">
+                <button type="button" name="artista-profile menu button play">
+                    <img src="img\button play black.png">
+                    <p>REPRODUZIR ARTISTA</p>
+                </button>
+                <button type="submit" name="artista-profile menu button bookmark">
+                    <img src="img\bookmark_16.ad7e47707917.png">
+                </button>
+                <button type="button" name="artista-profile menu button more">
+                    <img src="img\more_dark_16.7308b71a1b98.png">
+                </button>
+            </span>
+        </div>
+        <div class="artista-profile infos">
+                <p class="ouvintes">Ouvintes: 99,6 mil</p>
+                <p class="scrobbles">Scrobbles: 2,5 mi</p>
+                <p class="userScrobbles">Seus scrobbles: 94</p>    
+        </div>
+    </main>
+</body>
+</html>
